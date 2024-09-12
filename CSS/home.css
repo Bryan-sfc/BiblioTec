@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -17,23 +16,12 @@ body {
     font-family: "Montserrat", system-ui;
     display: flex;
     flex-direction: column;
-} 
+}
 
 header {
     background-color: #26333d;
     height: 100px;
     width: 100%;
-}
-
-footer {
-    background-color: #26333d;
-    width: 100%;
-    height: 100px;
-    color: white;
-
-    display: flex;
-    align-items: center;
-
 }
 
 .Layout-grid {
@@ -57,6 +45,10 @@ header nav {
     width: 350px;
     height: 100%;
     /* border: 3px solid snow; */
+}
+
+nav a:hover {
+    color: #2FD6CB;
 }
 
 header nav a {
@@ -97,13 +89,12 @@ header nav a {
     flex-wrap: wrap;
     padding: 20px;
     text-align: center;
-
+    
     width: 250px;
     height: 70%;
     border-radius: 25px;
     border: 3px solid black;
     background-color: snow;
-    back
 }
 
 .Borda {
@@ -132,11 +123,150 @@ header nav a {
 
 .Top-4 {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 992px;
 }
 
-.livros {
+.livro {
     display: flex;
     justify-content: center;
-    width: 100%;  
+    width: 100%;
+    height: 700px;
+    margin-top: 0;
+    /* border: 2px solid salmon; */
+    background-color: whitesmoke;
+}
+
+.livro h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: aqua;
+    font-size: 42px;
+    text-decoration: underline aqua;
+}
+
+.recomendados {
+    width: 203px;
+    height: 500px;
+    text-align: center;
+}
+
+.recomendados img {
+    width: 203px;
+    height: 325px;
+}
+
+.recomendados h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.recomendados p {
+    font-size: 20px;
+}
+
+.recomendados-bold {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #26333d;
+    width: 100%;
+    height: 800px;
+    color: white;
+}
+
+footer hr {
+    width: 100%;
+    height: 0;
+    color: #2FD6CB;
+}
+
+.organizacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.logos img {
+    width: 175px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+}   
+
+.info section {
+    margin-left: 40px;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.info h1 {
+    font-size: 20px;
+    color: #2FD6CB;
+    font-weight: 300;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.apps {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+} 
+
+.apps img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.apps h1 {
+    color: #2FD6CB;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.barra {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+}
+
+section a:hover {
+    color: #2FD6CB;
 }
