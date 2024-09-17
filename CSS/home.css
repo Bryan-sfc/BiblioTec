@@ -12,7 +12,6 @@ html body {
 }
 
 body {
-    background-color: dodgerblue;
     font-family: "Montserrat", system-ui;
     display: flex;
     flex-direction: column;
@@ -51,6 +50,53 @@ nav a:hover {
     color: #2FD6CB;
 }
 
+/* inicio banner */
+#banner {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-image: linear-gradient(to left,#4969df, #0b1846);
+}
+
+.banner-info {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+
+.banner-info p {
+    font-size: 20px;
+    color: white;
+}
+
+.h1titulo {
+    color: white;
+}
+
+.botao-banner {
+    background-color: #26333D;
+    max-width: 200px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 13px;
+    color: white;
+    
+    padding: 10px 10px 10px 10px;
+}
+
+
+.banner-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* fim do banner */
+
+/* inicio quadrados de informacao */
 header nav a {
     color: #e9f0ef;
     text-decoration: none;
@@ -66,7 +112,7 @@ header nav a {
     background-color: whitesmoke;
 }
 
-.porque-usar h1 {
+.porque-usar h2 {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", system-ui;
@@ -94,6 +140,7 @@ header nav a {
     height: 70%;
     border-radius: 25px;
     border: 3px solid black;
+    box-shadow: 2px 2px 10px black;
     background-color: snow;
 }
 
@@ -121,6 +168,50 @@ header nav a {
     font-size: 20px;
 }
 
+/* fim quadrado de informacao */
+
+/* inicio 3 quadro */
+
+#totalmente-gratis {
+    background-color: #3691D8;
+    height: 400px;
+}
+
+.totalmente-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.totalmente-flex img {
+    height: 100%;
+    height: 400px;
+}
+
+.texto-gratis h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: white;
+}
+
+.texto-gratis p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.texto-gratis button {
+    background-color: #26333D;
+    max-width: 200px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 13px;
+    color: white;
+    
+    padding: 10px 10px 10px 10px;
+}
+
+/* inicio livros */
 .Top-4 {
     display: flex;
     justify-content: space-between;
@@ -138,7 +229,7 @@ header nav a {
     background-color: whitesmoke;
 }
 
-.livro h1 {
+.livro h2 {
     width: 100%;
     text-align: center;
     margin-top: 50px;
@@ -172,7 +263,9 @@ header nav a {
 .recomendados-bold {
     font-weight: bold;
 }
+/* fim livros */
 
+/* inicio footer */
 footer {
     background-color: #26333d;
     width: 100%;
@@ -219,17 +312,25 @@ footer hr {
     margin-left: 40px;
 }
 
-.info p {
-    font-size: 20px;
-    font-weight: 300;
-}
 
-.info h1 {
+.info h2 {
     font-size: 20px;
     color: #2FD6CB;
     font-weight: 300;
     margin-bottom: 10px;
     width: 100%;
+}  
+
+.info nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+.info nav a:hover {
+    text-decoration: none;
+    color: #2FD6CB;
 }
 
 .apps {
@@ -248,7 +349,7 @@ footer hr {
     margin-left: 20px;
 }
 
-.apps h1 {
+.apps h2 {
     color: #2FD6CB;
     font-weight: 300;
     font-size: 20px;
@@ -270,3 +371,4 @@ footer hr {
 section a:hover {
     color: #2FD6CB;
 }
+/* fim footer */

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", system-ui;
+    display: flex;
+    flex-direction: column;
+    background-image: url("login-bk-desktop.png");
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #26333d;
+    height: 100px;
+    width: 100%;
+}
+
+.Layout-grid {
+    margin: 0 auto;
+    width: 100%;
+    /* border: 3px solid snow; */
+    max-width: 992px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    /* border: 3px solid snow; */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #2FD6CB;
+}
+/* fim cabeçalho */
+
+.login-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.login {
+    background-color: #2FD6CB;
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+}

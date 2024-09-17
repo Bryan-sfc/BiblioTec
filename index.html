@@ -12,19 +12,35 @@
     <header>
         <div class="Layout-grid header-flex">
             <img src="./images/logo-desktop.svg" alt="Um livro aberto com o texto bibliotec ao lado">
-            <nav>
+            <nav>   
                 <a href="#">Quem Somos</a>
                 <a href="#">Nosso Acervo</a>
-                <a href="#">Login</a>
+                <a href="login.html">Login</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <article id="banner">
+            <div class="Layout-grid banner-flex">
+                <div class="banner-info">
+                    <h1 class="h1titulo">Bem-vindo ao Bibliotec</h1> <br>
+
+                    <p>O melhor gerenciador para bibioteca de maneira
+                        moderna e automatizada!
+                    </p><br>
+                    <button class="botao-banner">Acessar</button>
+
+
+                </div>
+                <img src="images/banner-mulher-livro.png" alt="Banner mulher com livro na mão" width="500">
+            </div>
+        </article>
+
         <section class="porque-usar">
             <div class="Bibliotec-flex">
 
-                <h1>Por que usar a Biblio Tec?</h1>
+                <h2>Por que usar a Biblio Tec?</h2>
 
                 <article class="motivo">
                     <div class="Borda">
@@ -58,10 +74,24 @@
             </div>
         </section>
 
+        <section id="totalmente-gratis">
+
+            <div class="Layout-grid totalmente-flex">
+                <img src="./images/totalmente-gratis.png">
+                <div class="texto-gratis">
+                    <h2>Acesse a nossa plataforma</h2>
+
+                    <p>Faça login ou solicite <br> cadastro para a bibliotecaria</p>
+
+                    <button class="botao-gratis">Acessar</button>
+                </div>
+            </div>
+        </section>
+
         <section class="livro">
             <div class="Top-4">
 
-                <h1> <br>Top 4 livros recomendados</h1>
+                <h2> <br>Top 4 livros recomendados</h2>
 
                 <article class="recomendados">
                     <img src="./images/image 1.svg">
@@ -112,19 +142,21 @@
             </section>
 
             <nav class="info">
-                <section>
-                    <h1>Biblioteca</h1>
-                    <p>Baixar biblioteca <br> Suporte ao usuário</p>
-                </section>
+                <nav>
+                    <h2>Biblioteca</h2>
+                    <a href="#">Baixar biblioteca</a> <br>
+                    <a href="#">Suporte ao usuário</a>
+                </nav>
 
-                <section>
-                    <h1>Quem somos</h1>
-                    <p>Clientes <br> Benefícios</p>
-                </section>
+                <nav>
+                    <h2>Quem somos</h2>
+                    <a href="">Clientes</a> <br>
+                    <a href="">Benefícios</a>
+                </nav>
             </nav>
 
             <div class="apps">
-                <h1>Siga nas redes sociais</h1>
+                <h2>Siga nas redes sociais</h2>
                 <img src="./images/facebook-icon.png">
                 <img src="./images/instagram-icon.png">
                 <img src="./images/linkedin-icon.png">
@@ -141,4 +173,5 @@
         </div>
     </footer>
 </body>
+
 </html>
