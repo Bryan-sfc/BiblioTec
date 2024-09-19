@@ -41,7 +41,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    width: 400px;
     height: 100%;
     /* border: 3px solid snow; */
 }

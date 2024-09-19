@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - A sua biblioteca digital</title>
-
     <link rel="stylesheet" href="./CSS/login.css">
 
     <style>
@@ -14,7 +13,7 @@
             background-size: 100%;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -23,18 +22,36 @@
             <img src="./images/logo-desktop.svg" alt="Um livro aberto com o texto bibliotec ao lado">
             <nav>
                 <a href="index.html">
-                    << /a>
-                        <a href="#">Quem Somos</a>
-                        <a href="#">Nosso Acervo</a>
-                        <a href="#">Login</a>
+                    <img src="./images/Return.svg">
+                </a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Nosso Acervo</a>
+                <a href="login.html">Login</a>
             </nav>
         </div>
     </header>
 
     <main class="login-flex Layout-grid">
-        <section class="login">
+        <form class="login">
             <h1>Entre na Biblio Tec</h1>
-        </section>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Insira Seu Email" id="email">
+            </div>
+
+            <div class="senha">
+                <label for="senha">Senha</label>
+                <input type="password" placeholder="Insira Sua Senha" id="senha">
+                <a href="">Esqueceu sua Senha?</a>
+            </div>
+
+            <div>
+                <button>
+                    <p href="index.html">Entrar</p>
+                </button>
+            </div>
+        </form>
     </main>
 </body>
 

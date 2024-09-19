@@ -8,27 +8,20 @@
 }
 
 html body {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
     font-family: "Montserrat", system-ui;
     display: flex;
     flex-direction: column;
-    background-image: url("login-bk-desktop.png");
-    background-repeat: no-repeat;
-}
-
-header {
-    background-color: #26333d;
-    height: 100px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .Layout-grid {
     margin: 0 auto;
     width: 100%;
-    /* border: 3px solid snow; */
     max-width: 992px;
 }
 
@@ -39,24 +32,47 @@ header {
     height: 100%;
 }
 
+header {
+    background-color: #26333d;
+    height: 100px;
+    width: 100%;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    width: 400px;
     height: 100%;
     /* border: 3px solid snow; */
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: white;
 }
 
-nav a:hover {
+header nav img {
+    width: 30px;
+    padding: 5px;
+    transition: box-shadow 0.6s, border-radius 0.6s;
+}
+
+header nav img:hover {
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+
+header a:hover {
     color: #2FD6CB;
 }
 /* fim cabeçalho */
+
+h1 {
+    margin: 40px;
+    font-weight: 700;
+    font-size: 35px;
+}
 
 .login-flex {
     display: flex;
@@ -66,8 +82,94 @@ nav a:hover {
 }
 
 .login {
-    background-color: #2FD6CB;
+    background-color: #ffffff3e;
     width: 100%;
     height: 600px;
     border-radius: 15px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.login button{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #26333d;
+    margin-top: 30px;
+}
+
+.login button p{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+}
+
+.login button:hover{
+    background-color: #6a8eaa;
+    border: black;
+}
+
+.login button p:hover{
+    color: black;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
+.email label{
+    width: 500px;
+    font-weight: 500;
+}
+
+.email input {
+    padding: 10px;
+    width: 500px;
+    
+    align-self: center;
+    border-radius: 10px;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 40px;
+}
+
+.senha label {
+    width: 500px;
+    font-weight: 500;
+}
+
+.senha input {
+    padding: 10px;
+    width: 500px;
+    
+    align-self: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.senha a {
+    font-size: 15px;
+    align-self: flex-end;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.senha a:hover {
+    color: white;
 }
