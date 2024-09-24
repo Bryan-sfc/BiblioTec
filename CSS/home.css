@@ -32,7 +32,7 @@ header {
 
 .header-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
@@ -379,6 +379,58 @@ section a:hover {
 /* fim footer */
 
 @media screen and (max-width: 767px) {
+    header nav {
+        position: fixed;
+        top: 0;
+        left: -80%;
+        z-index: 10;
+
+        width: 80%;
+        height: 100%;
+        background-color: #4969df;
+    }
+
+    header a {
+        display: none;
+    }
+
+    .banner-info {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .banner-info h1 {
+        font-size: 30px;
+    }
+
+    .banner-info p {
+        font-size: 20px;
+    }
+
+    .banner-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-flex img {
+        display: none;
+    }
+
+    .banner-info button {
+        height: 50px;
+        width: 270px;
+    }
+
+    .mostrarMenu {
+        left: 0;
+    }
+
+
+
     .porque-usar {
         height: 1400px;
         display: flex;
@@ -464,11 +516,11 @@ section a:hover {
         padding-left: 40px;
         padding-right: 40px;
     }
-    
+
     .texto-gratis button {
         height: 50px;
         width: 270px;
-        font-size: 25px;    
+        font-size: 25px;
     }
 
     /* fim banner */
